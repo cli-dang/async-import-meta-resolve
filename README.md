@@ -29,7 +29,7 @@ ___
 ___
 
 ```shell
-npm install @cli-dang/import
+npm install @cli-dang/async-import-meta-resolve
 ```
 
 ___
