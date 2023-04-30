@@ -1,0 +1,1 @@
+export declare function async_import_meta_resolve( specified: string, parent?: string|URL ):Promise<string|Error>;
