@@ -7,7 +7,8 @@
     "outDir": "./",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "inlineSourceMap": true
+    "inlineSourceMap": true,
+    "removeComments": true
   },
   "exclude": [
     "./node_modules/**/*",
