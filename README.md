@@ -20,7 +20,12 @@ ___
 
 ___
 
-DESCRIPTION
+> ℹ This feature is only available with the --experimental-import-meta-resolve command flag enabled.
+
+Since Node v20 import.meta.resolve is no more a **Promise**`|`**AsyncFunction**
+more @ [NodeJS API Docs ](https://nodejs.org/dist/latest-v20.x/docs/api/esm.html#importmetaresolvespecifier-parent)
+
+
 
 ___
 
@@ -36,7 +41,16 @@ ___
 
 ## Usage
 
-USAGE
+Let's say we need to know if the package `lodash` is installed.
+
+```typescript
+import { async_import_meta_resolve } from 'async-import-meta-resolve'
+
+let lodash_is_installed: string | Error = await async_import_meta_rosolve('lodash').catch(error=>error)
+if(lodhash_is_installed instanceof Error)
+  console.error('lodash not found')
+else console.log(`lodash found and its location is -> ${lodash_is_installed}`)
+```
 
 ___
 
