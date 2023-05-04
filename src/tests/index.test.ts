@@ -1,6 +1,6 @@
 import * as tttt from 'trythistrythat'
 import * as exports from '../index.js'
-import { AssertionError } from "assert"
+import { AssertionError } from "node:assert"
 
 type indexTest = {
   async_import_meta_resolve: string,
